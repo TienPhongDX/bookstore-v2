@@ -1,0 +1,15 @@
+{
+  "resourceName": "s3ae40d64c",
+  "policyUUID": "ae40d64c",
+  "bucketName": "bookstorev28fae29c3ace04321817145c92be2b54c",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

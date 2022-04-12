@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "bookstorev2",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/tmp/amplify-4cefc495-51d6-445d-bacd-68fa71a0cf6e/amplify/backend/api/bookstorev2/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "keyDescription": "api key description",
+      "expirationTime": 30
+    },
+    "conflictResolution": {
+      "defaultResolutionStrategy": {
+        "type": "AUTOMERGE"
+      }
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "AWS_IAM"
+      },
+      {
+        "mode": "AMAZON_COGNITO_USER_POOLS",
+        "cognitoUserPoolId": "authbookstorev246cee2b5"
+      }
+    ]
+  }
+}

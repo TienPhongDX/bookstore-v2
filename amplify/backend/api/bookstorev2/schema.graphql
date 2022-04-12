@@ -1,0 +1,25 @@
+type Order @model @auth(rules: [{allow: owner}, {allow: groups, groups: ["admin"], operations: [read, create, update, delete]}]) {
+  id: ID!
+  user: String!
+  date: String
+  total: Float
+  BookOrders: [BookOrder] @hasMany(indexName: "byOrder", fields: ["id"])
+}
+
+type BookOrder @model @auth(rules: [{allow: owner}, {allow: groups, groups: ["admin"], operations: [read, create, update, delete]}]) {
+  id: ID!
+  book_id: ID!
+  order_id: ID!
+  orderID: ID! @index(name: "byOrder")
+}
+
+type Book @model @auth(rules: [{allow: private}]) {
+  id: ID!
+  title: String!
+  description: String
+  image: String
+  author: String
+  featured: Boolean
+  price: Float
+}
+ 
