@@ -13,7 +13,7 @@ type BookOrder @model @auth(rules: [{allow: owner}, {allow: groups, groups: ["ad
   orderID: ID! @index(name: "byOrder")
 }
 
-type Book @model @auth(rules: [{allow: private}]) {
+type Book @model @auth(rules: [{allow: private}, {allow: public}]) {
   id: ID!
   title: String!
   description: String

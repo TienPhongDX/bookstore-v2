@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid';
 import { API, graphqlOperation, Storage } from "aws-amplify";
-import { AmplifyAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
+import { Authenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import { createBook } from '../graphql/mutations'
 import config from '../aws-exports'
 
@@ -51,7 +51,7 @@ const Admin = () => {
 
     return (
         <section className="admin-wrapper">
-            <AmplifyAuthenticator>
+            <Authenticator>
                 <section>
                     <header className="form-header">
                         <h3>Add New Book</h3>
@@ -122,7 +122,7 @@ const Admin = () => {
                         </div>
                     </form>
                 </section>
-            </AmplifyAuthenticator>
+            </Authenticator>
         </section>
     )
 }

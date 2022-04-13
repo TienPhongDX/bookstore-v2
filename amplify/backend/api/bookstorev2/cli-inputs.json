@@ -3,7 +3,7 @@
   "serviceConfiguration": {
     "apiName": "bookstorev2",
     "serviceName": "AppSync",
-    "gqlSchemaPath": "/tmp/amplify-4cefc495-51d6-445d-bacd-68fa71a0cf6e/amplify/backend/api/bookstorev2/schema.graphql",
+    "gqlSchemaPath": "/tmp/amplify-b80f7382-3759-4bd7-b388-600cebdab150/amplify/backend/api/bookstorev2/schema.graphql",
     "defaultAuthType": {
       "mode": "API_KEY",
       "keyDescription": "api key description",
